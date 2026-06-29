@@ -13,6 +13,8 @@ Note down IP addresses and open ports found.
 
 For IP 192.168.100.189 1000 ports were scanned but all ports were filtered.  All scanned TCP ports are being filtered by a firewall or packet filter, so Nmap received no responses.
 Optionally analyze packet capture with Wireshark.
+Analyzing the packet using wireshark the target port is filtered (or the response was not captured), preventing completion of the TCP handshake.
+Two packets together for TCP SYN scan against port 5906. The target immediately replied with RST, ACK, which means the port is closed. 
 
 Research common services running on those ports.
 
